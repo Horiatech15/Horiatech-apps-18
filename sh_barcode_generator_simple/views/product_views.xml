@@ -14,7 +14,7 @@
                     style="width: max-content !important;"
                     type="object"
                     class="oe_highlight"
-                    invisible="product_variant_count &gt; '1'"
+                    invisible="product_variant_count &gt; 1"
                 />
                 </div>
                 <div>
@@ -25,10 +25,10 @@
                         groups="sh_barcode_generator_simple.group_barcode_generator"
                         options='{"preview_image": "sh_product_barcode_img", "size": [250, 90]}'
                         readonly="1"
-                        invisible="product_variant_count &gt; '1'"
+                        invisible="product_variant_count &gt; 1"
 
                     />
-                    <button name="action_generate_barcode_image" type="object" class="oe_link" string="Generate Image"  invisible="product_variant_count &gt; '1'" groups="sh_barcode_generator_simple.group_barcode_generator"/>
+                    <button name="action_generate_barcode_image" type="object" class="oe_link" string="Generate Image"  invisible="product_variant_count &gt; 1" groups="sh_barcode_generator_simple.group_barcode_generator"/>
                 </div>
             </xpath>
         </field>
